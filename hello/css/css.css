@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-06-19 09:49:05
+ * @version $Id$
+ */
+*{margin: 0;padding: 0;}
+#outer{width: 640px;margin: 0 auto;background: url(../images/background_02.jpg) 0 0 no-repeat;overflow: hidden;position: relative}
+.shou{margin: 0 auto;}
+.liangmei{width: 497px;height: 609px;
+            -webkit-animation: 'move' 2s;
+        }
+@-webkit-keyframes move{
+        0%  {-webkit-transform: translateY(-609px);}
+        100%   {-webkit-transform: translateY(0);}
+}
+.xingnan{width: 611px;height: 361px;
+            -webkit-animation: 'move2' 2s;
+        }
+@-webkit-keyframes move2{
+        0%  {-webkit-transform: translateY(361px);}
+        100%   {-webkit-transform: translateY(0);}
+}
+.wenzi{width:400px;height:37px;margin: 0 auto;text-align: center;line-height: 37px;color: #0e6bb5;font-weight: 700;}
+.qc{width:465px;height: 44px;position: absolute;left: 86px;top: 301px;z-index: 10;
+    -webkit-animation: 'opacity' 4s;
+    }
+@-webkit-keyframes opacity {
+        0%  {opacity: 0;}
+        100%   {opacity: 1;}
+}
+.nihao{position: absolute;left: 9px;top: 35px;z-index: 1;
+        -webkit-animation: 'nihao' 3s 2s;
+        -webkit-animation-fill-mode:forwards;
+        -webkit-transform: translateX(-333px);
+    }
+@-webkit-keyframes nihao {
+                        0%  {-webkit-transform: translateX(-333px);}
+                        100%   {-webkit-transform: translateX(0);}
+                        }
+.bu{position: absolute;left:180px;top: 116px;z-index: 10;
+    -webkit-animation: 'bu' 3s 5s;
+    -webkit-animation-fill-mode:forwards;
+    -webkit-transform: translateY(-290px);
+    }
+@-webkit-keyframes bu {
+                        0% {-webkit-transform: translateY(-290px);}
+                        70% {-webkit-transform: translateY(30px);}
+                        100% {-webkit-transform: translateY(0);}
+                    }
+.zhaodiao{position: absolute;right:13px;top: 60px;width:320px;height:203px;float: left;z-index: 2;
+        -webkit-animation: 'zhaodiao' 3s 2s;
+        -webkit-animation-fill-mode:forwards;
+        -webkit-transform: translateX(333px);
+        }
+@-webkit-keyframes zhaodiao {
+    0% {-webkit-transform: translateX(333px);}
+    100% {-webkit-transform: translateX(0px);}
+}
+.yingxiang{float: left;margin: -115px 50px 49px;position: relative;z-index: 3;
+            -webkit-transform: scale(0.8);
+            -webkit-animation: 'scale' 1s infinite;
+            }
+@-webkit-keyframes scale {
+                            0% {-webkit-transform: scale(0.8);}
+                            100% {-webkit-transform: scale(1);}
+                        }
